@@ -1,0 +1,2 @@
+from models.course_models import CourseModel
+
