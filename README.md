@@ -32,22 +32,29 @@ This project demonstrates backend development best practices, clean architecture
 
 ## 📁 Project Structure
 
+```
 api/
     v1/
         endpoints/
+            course.py
+        api.py
+
 core/
     database.py
     settings_.py
     deps.py
+
 models/
     __all_models.py
     course_models.py
+
 schemas/
     course_schema.py
 
 create_table.py
 main.py
 requirements.txt
+```
 
 ---
 
@@ -69,9 +76,11 @@ venv\Scripts\activate     # Windows
 ---
 
 ### 3. Install dependencies
+```
 pip install fastapi psycopg2-binary sqlalchemy asyncpg uvicorn
 pip freeze > requirements.txt
 pip install pydantic-settings
+```
 
 
 ---
@@ -112,13 +121,13 @@ http://localhost:8000/docs
 
 ### POST /courses/
 Create a new course
-
+```
 {
   "title": "Python for Beginners",
   "course_classes": 40,
   "hours": 50
 }
-
+```
 ---
 
 ### GET /courses/
