@@ -2,7 +2,7 @@ from core.database import Base
 from sqlalchemy import Column, Integer, String
 
 class CourseModel(Base):
-    __tablename__ = 'cursos'
+    __tablename__ = 'courses'
 
     id: int = Column(Integer, primary_key=True, autoincrement=True)
     title: str = Column(String(100))
